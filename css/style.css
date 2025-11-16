@@ -1,0 +1,16 @@
+/* style.css - custom styles for Campus Life MVP */
+/* This file comes AFTER Bootstrap so these rules override when needed */
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Example: style the hero text */
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Make event cards wrap nicely */
+#eventsList .card {
+  margin-bottom: 1rem;
+}
