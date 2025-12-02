@@ -15,6 +15,18 @@
     .card-img-top { object-fit: cover; height: 225px; }
     .card-body { display: flex; flex-direction: column; }
     .card.h-100 { height: 100%; }
+
+    /* HERO IMAGE IMPROVEMENTS */
+    .hero-image {
+      max-width: 900px;
+    }
+
+    .hero-image img {
+      max-height: 350px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
   </style>
 </head>
 
@@ -43,10 +55,19 @@
   <main class="container my-5">
     <!-- HERO IMAGE + TEXT -->
     <section class="text-center mb-5">
-      <img src="https://www.reinhardt.edu/wp-content/uploads/Aerial-11.jpg" alt="Aerial view of Reinhardt University campus" class="img-fluid w-100 rounded mb-4" />
+      <div class="hero-image mx-auto mb-4">
+        <img
+          src="https://www.reinhardt.edu/wp-content/uploads/Aerial-11.jpg"
+          alt="Aerial view of Reinhardt University campus"
+          class="img-fluid shadow"
+        />
+      </div>
+
       <h1 class="display-5 fw-bold">Campus Life Super App</h1>
-      <p class="lead">Your one-stop hub for campus events, student resources, and community updates.</p>
-      <a href="events.html" class="btn btn-primary btn-lg">View Upcoming Events</a>
+      <p class="lead col-lg-8 mx-auto">
+        Your one-stop hub for campus events, student resources, and community updates.
+      </p>
+      <a href="events.html" class="btn btn-primary btn-lg mt-2">View Upcoming Events</a>
     </section>
 
     <!-- FEATURES SECTION -->
